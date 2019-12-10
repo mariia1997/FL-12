@@ -246,6 +246,12 @@
   width: 110px;
   float: right;
  }
+ 
+ .submit-btn:hover{
+  border-color: lightskyblue;
+  color: white;
+  background-color: lightskyblue;
+ }
 
  /*13*/
  .tm-sidebar,
