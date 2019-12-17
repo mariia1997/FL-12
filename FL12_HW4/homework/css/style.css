@@ -3,13 +3,17 @@
     padding: 0;
 }
 
-.header {
-    display: flex;
+.head{
+     position: fixed;
+  background-color: #fff;
+   display: flex;
     flex-direction: row;
     padding: 30px;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #777;
-    margin: 0 120px 0 120px;
+    margin: 0;
+    z-index: 2;
+    width: 100%;
 }
 
 .logo {
