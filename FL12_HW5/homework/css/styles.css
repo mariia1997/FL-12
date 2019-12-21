@@ -1,0 +1,403 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+/*:root {
+  --bg-color--dark: #0b192f;
+  --bg-color--header: #024161;
+  --link: #fff;
+  --link--hover: #1f52a4;
+  --bg-footer-color: #024161;
+}*/
+
+body {
+    font-family: roboto;
+}
+
+.post-1 {
+    background: #9d27b0;
+}
+
+.post-2 {
+    background: #9bb800;
+}
+
+.post-3 {
+    background: #ed5120;
+}
+
+.post-4 {
+    background: #9d27b0;
+}
+
+.post-5 {
+    background: #2d95bb;
+}
+
+/* Your styles go here */
+
+* {
+    box-sizing: border-box;
+}
+@media screen{
+
+body {
+    background-color: #0b192f;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #024161;
+}
+
+.sectionlogo {
+    margin-left: 20px;
+}
+
+.burger {
+    display: none;
+}
+
+.sectionlogo p {
+    font-size: 2.5vw;
+    font-weight: 200;
+    word-spacing: -1;
+}
+
+.sectionlogo p span {
+    color: #d12767;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin-right: 20px;
+    word-spacing: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline-block;
+
+}
+
+.nav a {
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 15px;
+    padding: 2em 1em;
+
+}
+
+.nav a:hover {
+    background-color: #1f52a4;
+
+}
+
+.top-title h3 {
+    font-size: 26px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.top-title .text {
+    margin: 0;
+    font-size: 13px;
+    line-height: 2;
+    opacity: 0.7;
+    width: 75%;
+}
+
+.title-section {
+    background-image: url('../img/post0.jpg');
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    padding: 30px 200px 30px 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.container {
+    display: flex;
+}
+
+.posts {
+    flex: 0 0 70%;
+}
+
+.posts .publication {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.posts .publication:nth-of-type(2n) {
+    flex-direction: row-reverse;
+    text-align: right;
+
+}
+
+.posts .publication:last-of-type {
+    min-height: 100px;
+}
+
+.posts>.publication:nth-of-type(2n+1)>.content {
+    padding-right: 30px;
+}
+
+.posts>.publication:nth-of-type(2n)>.content {
+    padding-left: 30px;
+}
+
+.posts .photo {
+    display: block;
+    height: 160px;
+    flex: 0 0 50%;
+}
+
+.posts .publication img {
+    height: 100%;
+    width: 100%;
+}
+
+.posts .publication .text {
+    font-size: 10px;
+    width: 70%;
+    opacity: 0.7;
+    margin: 20px;
+
+}
+
+.posts .publication:nth-of-type(2n+1) .date {
+    right: 5px;
+}
+
+.posts .publication:nth-of-type(2n) .date {
+    left: 5px;
+}
+
+.content .date {
+    position: absolute;
+    top: 5px;
+    text-align: center;
+    opacity: .2;
+}
+
+.date .date-day {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.date .date-month {
+    font-size: 14px;
+}
+
+.content .content-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 200;
+    font-size: 26px;
+}
+
+.posts .publication a:hover {
+    opacity: 0.5;
+}
+
+.aside .aside-article {
+    background-color: #fff;
+    color: #000;
+    float: right;
+    box-sizing: border-box;
+    display: block;
+    margin-left: 20px;
+    flex: 0 0 30%;
+
+}
+
+aside .aside-article .photo img {
+    display: block !important;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.aside .aside-article .news {
+    padding: 16px 18px;
+}
+
+.aside .aside-article .news h3 {
+    margin: 0 0 6px 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.aside .aside-article .news .text {
+    margin: 0;
+    font-size: 8px;
+    line-height: 1.5;
+    opacity: .7;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: #024161;
+    margin-top: 20px;
+    font-size: 10px;
+    line-height: 0.5;
+    opacity: 0.3;
+    padding: 20px 30px;
+}
+}
+@media (max-width:768px) {
+    body {
+        max-width: none;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 4vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+
+    .burger {
+        display: inline-block;
+        border: none;
+        background: transparent;
+        color: #fff;
+        font-size: 3vw;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .sectionlogo {
+        font-size: 5vw;
+
+    }
+
+    .title-section {
+        height: 40vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
+        font-size: 2vw;
+    }
+
+    .posts {
+        flex: 0 0 60%;
+
+
+    }
+
+    .content h3 {
+        word-break: break-word;
+
+
+    }
+
+    .publication {
+
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        text-align: left !important;
+
+    }
+    .content-wrap{
+      height: 25vh;
+    }
+
+    .posts .publication .content .date {
+        left: auto;
+        right: 2.2vw;
+        top: 2.2vw;
+    }
+
+    .date .date-day {
+        font-size: 7vw;
+    }
+
+    .date .date-month {
+        font-size: 4vw;
+    }
+
+    .posts .publication:last-of-type .date {
+        position: static;
+        margin-top: 5vw;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2vw
+    }
+
+
+@media  (max-width: 480px) {
+    body {
+        margin: 1%;
+    }
+
+    
+    .publication .content-wrap .content{
+      display: flex;
+      align-items: center;
+       justify-content: center;
+       flex-direction: column;
+    }
+    .header{
+      height: 30vw;
+      }
+    .sectionlogo{      
+  font-size: 10vw;
+}
+    }
+
+    .burger {
+        font-size: 5vw;
+    }
+
+     .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .posts .publication .photo {
+        height: 100%;
+        width: 100%;
+    }
+
+    
+
+    .aside .aside-article {
+        margin: 0;
+        justify-content: center !important;
+        
+
+    }
+     
+
+
+}
+}
