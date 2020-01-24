@@ -1,0 +1,27 @@
+.empty {
+    font-style: italic;
+}
+
+.notToDisplay {
+    display: none;
+}
+
+i {
+    vertical-align: bottom;
+}
+
+.folder:hover, .file:hover {
+    background-color: rgb(224, 224, 212);
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+.folder > i {
+    color: rgba(238, 201, 15, 0.75);
+}
+
+.file > i {
+    color: rgba(228, 228, 214, 0.75);
+}
